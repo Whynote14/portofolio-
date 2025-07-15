@@ -16,7 +16,8 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="mb-8">
             <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-white">
-              <img src="/img/foto.jpg"
+              <img 
+                src="/img/foto.jpg" // ← PAKAI SLASH DEPAN
                 alt="Muhamad Zidane Al Huda"
                 className="w-full h-full object-cover grayscale"
               />
