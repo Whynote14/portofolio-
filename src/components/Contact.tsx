@@ -61,13 +61,13 @@ const Contact = () => {
     {
       icon: SiGoogledrive,
       name: 'Google Drive',
-      href: 'https://drive.google.com/drive/folders/YOUR_FOLDER_ID',
+      href: 'https://drive.google.com/drive/folders/1fD50OkyUEwnNYZ77T1urvBmx5lnxuKLv?usp=drive_link',
       color: 'hover:text-blue-600'
     },
     {
       icon: FaGitlab,
       name: 'GitLab',
-      href: 'https://gitlab.com/Whynote14',
+      href: 'https://gitlab.com/dashboard/projects',
       color: 'hover:text-orange-600'
     },
     {
