@@ -14,14 +14,14 @@ import {
 
 const Skills = () => {
   const technicalSkills = [
-    { name: 'Docker', icon: Server, level: 85 },
-    { name: 'Grafana', icon: Monitor, level: 80 },
-    { name: 'Prometheus', icon: Database, level: 75 },
-    { name: 'Cloud Computing', icon: Cloud, level: 80 },
-    { name: 'DevOps', icon: Server, level: 75 },
-    { name: 'HTML/CSS', icon: Code, level: 90 },
-    { name: 'JavaScript', icon: Code, level: 85 },
-    { name: 'Networking', icon: Globe, level: 80 },
+    { name: 'Docker', icon: Server },
+    { name: 'Grafana', icon: Monitor },
+    { name: 'Prometheus', icon: Database },
+    { name: 'Cloud Computing', icon: Cloud },
+    { name: 'DevOps', icon: Server },
+    { name: 'HTML/CSS', icon: Code },
+    { name: 'JavaScript', icon: Code },
+    { name: 'Networking', icon: Globe },
   ];
 
   const softSkills = [
@@ -57,23 +57,12 @@ const Skills = () => {
               </h3>
               <div className="space-y-6">
                 {technicalSkills.map((skill, index) => (
-                  <div key={index} className="bg-gray-900 border border-gray-700 rounded-lg p-6 hover:border-white transition-all duration-200">
+                  <div key={index} className="bg-gray-900 border border-gray-700 rounded-lg p-4 hover:border-white transition-all duration-200">
                     <div className="flex items-center mb-3">
                       <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mr-3">
                         <skill.icon className="w-5 h-5 text-black" />
                       </div>
-                      <div className="flex-1">
-                        <div className="flex justify-between items-center">
-                          <h4 className="font-semibold text-white">{skill.name}</h4>
-                          <span className="text-sm text-gray-300 font-medium">{skill.level}%</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div 
-                        className="bg-white h-2 rounded-full transition-all duration-1000 ease-out"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
+                      <h4 className="font-semibold text-white">{skill.name}</h4>
                     </div>
                   </div>
                 ))}
